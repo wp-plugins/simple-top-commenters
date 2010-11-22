@@ -1,5 +1,5 @@
 === Simple Top Commenters ===
-Contributors: <a href="http://mike-eng.com">Mike Eng</a>
+Contributors: Mike Eng
 Donate link: 
 Tags: comments, widget, sidebar, counter
 Requires at least: 3.0
@@ -32,9 +32,8 @@ A sidebar widget that displays a list of top commenters across a site, showing t
 5. "Show 'comments' Label?": If checked, a top commenter will appear as "mike: 10 comments". If unchecked, he/she will appear simply as "mike: 10".
 
 == Screenshots ==
-<img src="http://mike-eng.com/wp-content/uploads/simple-top-commenters-admin-300x268.png">
-
-<img src="http://mike-eng.com/wp-content/uploads/simple-top-commenters-633.png">
+1. Configurable title, method of defining a single commenter, list of commenters to exclude from the counter, length of list, and whether to show "comments" in the list after the number of comments displayed.
+2. Appearance in the sidebar (see "Top Commenters" in the bottom right).
 
 == Changelog ==
 = 11/20/2010 =
