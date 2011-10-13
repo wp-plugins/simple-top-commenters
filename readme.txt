@@ -13,24 +13,8 @@ A sidebar widget that displays a list of top commenters across a site, showing t
 
 Version 1.1 supports localization (translation). Thanks to Mitja Mihelič - mitja.mihelic@arnes.si - http://www.linkedin.com/in/mmihelic for the code and translation to Slovene.
 
-Options:
-• Choose to define a unique commenter by "name" or "email" entered in the WordPress comment form
-• Exclude any specified commenters (the site administrator's comments, for example) from the top commenters list
-• Specify number of top commenters to show in the list
-• Choose to show or hide the "comments" label after the number. e.g. "username: 5 comments" OR "username: 5"
 
-== Installation ==
-
-1. Upload the `simple-top-commenters` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to the Appearance -> Widgets screen, drag the SimpleTopCommenters widget into the sidebar.
-
-== Frequently Asked Questions ==
-
-Q. How can I use this plugin with other translations?
-A. Create a PO file for the localization desired, name it with the appropriate country code and language code and add it to the "languages" folder. See http://urbangiraffe.com/articles/translating-wordpress-themes-and-plugins/ or http://codex.wordpress.org/I18n_for_WordPress_Developers#PO_files for more info. If you provide an additional translation, please send it to me, and I can add it to the next version. http://mike-eng.com
-
-= Options =
+Options
 
 1. "Title": customizable title that is displayed in the sidebar for this widget.
 
@@ -41,6 +25,18 @@ A. Create a PO file for the localization desired, name it with the appropriate c
 4. "# of Commenters to List": determines the number of top commenters to list.
 
 5. "Show 'comments' Label?": If checked, a top commenter will appear as "mike: 10 comments". If unchecked, he/she will appear simply as "mike: 10".
+
+== Installation ==
+
+1. Upload the `simple-top-commenters` folder to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Go to the Appearance -> Widgets screen, drag the SimpleTopCommenters widget into the sidebar.
+
+== Frequently Asked Questions ==
+
+Q. How can I use this plugin with other translations?
+
+A. Create a PO file for the localization desired, name it with the appropriate country code and language code and add it to the "languages" folder. See http://urbangiraffe.com/articles/translating-wordpress-themes-and-plugins/ or http://codex.wordpress.org/I18n_for_WordPress_Developers#PO_files for more info. If you provide an additional translation, please send it to me, and I can add it to the next version. http://mike-eng.com
 
 == Screenshots ==
 1. Configurable title, method of defining a single commenter, list of commenters to exclude from the counter, length of list, and whether to show "comments" in the list after the number of comments displayed.
@@ -54,4 +50,4 @@ Initial Release
 Added internationalization and included Slovene language files. Code and translation provided by Mitja Mihelič - mitja.mihelic@arnes.si - http://www.linkedin.com/in/mmihelic
 
 == Upgrade Notice ==
-Initial Release
+Version 1.1 supports localization
