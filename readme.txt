@@ -6,6 +6,7 @@ Requires at least: 3.0
 Tested up to: 3.0
 Stable tag: 1.1
 
+A sidebar widget that displays a list of top commenters across a site, showing the number of comments for each.
 
 == Description ==
 
@@ -34,9 +35,9 @@ Options
 
 == Frequently Asked Questions ==
 
-Q. How can I use this plugin with other translations?
+= How can I use this plugin with other translations =
 
-A. Create a PO file for the localization desired, name it with the appropriate country code and language code and add it to the "languages" folder. See http://urbangiraffe.com/articles/translating-wordpress-themes-and-plugins/ or http://codex.wordpress.org/I18n_for_WordPress_Developers#PO_files for more info. If you provide an additional translation, please send it to me, and I can add it to the next version. http://mike-eng.com
+Create a PO file for the localization desired, name it with the appropriate country code and language code and add it to the "languages" folder. See http://urbangiraffe.com/articles/translating-wordpress-themes-and-plugins/ or http://codex.wordpress.org/I18n_for_WordPress_Developers#PO_files for more info. If you provide an additional translation, please send it to me, and I can add it to the next version. http://mike-eng.com
 
 == Screenshots ==
 1. Configurable title, method of defining a single commenter, list of commenters to exclude from the counter, length of list, and whether to show "comments" in the list after the number of comments displayed.
