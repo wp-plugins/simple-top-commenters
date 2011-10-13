@@ -1,5 +1,5 @@
 === Simple Top Commenters ===
-Contributors: Mike Eng
+Contributors: Mike Eng http://mike-eng.com
 Donate link: 
 Tags: comments, widget, sidebar, counter
 Requires at least: 3.0
