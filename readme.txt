@@ -11,11 +11,17 @@ Stable tag: 1.0
 
 A sidebar widget that displays a list of top commenters across a site, showing the number of comments for each. Inspired by and extended from the Top Commentators Widget by WebGrrrl.
 
+Options:
+¥ Choose to define a unique commenter by "name" or "email" entered in the WordPress comment form
+¥ÊExclude any specified commenters (the site administrator's comments, for example) from the top commenters list
+¥ÊSpecify number of top commenters to show in the list
+¥ÊChoose to show or hide the "comments" label after the number. e.g. "username: 5 comments" OR "username: 5"
+
 == Installation ==
 
 1. Upload the `simple-top-commenters` folder to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to the Appearance -> Widgets screen, drag the SimpleTopCommenters widget into the sidebar.
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Go to the Appearance -> Widgets screen, drag the SimpleTopCommenters widget into the sidebar.
 
 == Frequently Asked Questions ==
 
