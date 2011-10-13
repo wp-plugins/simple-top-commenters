@@ -2,13 +2,18 @@
 /*
 Plugin Name: Simple Top Commenters
 Plugin URI: 
-Description: Displays a list of top commenters across a site, showing the number of comments for each. 
-Version: 1.0
+Description: Displays a list of top commenters across a site, showing the number of comments for each.
+Text Domain: simpleTopCommenters
+Domain Path: /languages
+Version: 1.1
 Author: Mike Eng
 Author URI: http://mike-eng.com
 License: GPL2
 */
-/*
+
+/* Load the translation */
+$plugin_dir = basename(dirname(__FILE__)).'/languages';
+load_plugin_textdomain( 'simpleTopCommenters', false, $plugin_dir );
 
 /**
  * Add function to widgets_init that'll load our widget.
@@ -40,13 +45,13 @@ class SimpleTopCommenters extends WP_Widget {
 	 */
 	function SimpleTopCommenters() {
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'example', 'description' => __('A list of top commenters on your site') );
+		$widget_ops = array( 'classname' => 'example', 'description' => __('A list of top commenters on your site', 'simpleTopCommenters') );
 
 		/* Widget control settings. */
 		$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'simple-top-commenters' );
 
 		/* Create the widget. */
-		$this->WP_Widget( 'simple-top-commenters', __('SimpleTopCommenters'), $widget_ops, $control_ops );
+		$this->WP_Widget( 'simple-top-commenters', __('SimpleTopCommenters', 'simpleTopCommenters'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -129,13 +134,7 @@ class SimpleTopCommenters extends WP_Widget {
 				//only shows "comments" if "show comments label" is set to true
 				if($showCommentsLabel == true){
 					foreach ($commenters as $k) {
-						//only puts the "s" on comments if it is grammatically appropriate
-						if($k->qty != 1){
-							echo ('<li>'.$k->comment_author.': '.$k->qty.' comments</li>');
-						}
-						else{
-							echo ('<li>'.$k->comment_author.': '.$k->qty.' comment</li>');
-						}
+						echo ('<li>'.$k->comment_author.': '.$k->qty.' '._n('comment', 'comments', $k->qty, 'simpleTopCommenters').'</li>');
 					} //end for loop
 				} // end if showCommentsLabel == on
 				
@@ -183,40 +182,44 @@ class SimpleTopCommenters extends WP_Widget {
 	function form( $instance ) {
 
 		/* Set up some default widget settings. */
-		$defaults = array( 'title' => __('Top Commenters', 'example'), 'excludeCommenters' => __('', 'example'), 'identifier' => 'email', 'limit' => 5, 'show_comments_label' => true );
+		$defaults = array( 'title' => __('Top Commenters', 'simpleTopCommenters'), 'excludeCommenters' => __('janez, janez@guest.arnes.si', 'simpleTopCommenters'), 'identifier' => 'email', 'limit' => 5, 'show_comments_label' => true );
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
 
 		<!-- Widget Title: Text Input -->
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'hybrid'); ?></label>
-			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>"/>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'simpleTopCommenters'); ?></label>
+			</br>
+			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" size="40"/>
 		</p>
 
 		<!-- Define Commenters Select Box -->
 		<p>
-			<label for="<?php echo $this->get_field_id( 'identifier' ); ?>"><?php _e('Define Commenters by:', 'example'); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'identifier' ); ?>"><?php _e('Define Commenters by:', 'simpleTopCommenters'); ?></label>
+			</br> 
 			<select id="<?php echo $this->get_field_id( 'identifier' ); ?>" name="<?php echo $this->get_field_name( 'identifier' ); ?>">
-				<option <?php if ( 'email' == $instance['identifier'] ) echo 'selected="selected"'; ?>>email</option>
-				<option <?php if ( 'name' == $instance['identifier'] ) echo 'selected="selected"'; ?>>name</option>
+				<option <?php if ( 'email' == $instance['identifier'] ) echo 'selected="selected"'; ?>><?php _e('email', 'simpleTopCommenters'); ?></option>
+				<option <?php if ( 'name' == $instance['identifier'] ) echo 'selected="selected"'; ?>><?php _e('name', 'simpleTopCommenters'); ?></option>
 			</select>
 		</p>
 		
 		<!-- Your Name: Text Input -->
 		<p>
-			<label for="<?php echo $this->get_field_id( 'excludeCommenters' ); ?>"><?php _e('Commenters to Exclude: (separated by comma)', 'jim, jim@email.com'); ?></label>
-			<input id="<?php echo $this->get_field_id( 'excludeCommenters' ); ?>" name="<?php echo $this->get_field_name( 'excludeCommenters' ); ?>" value="<?php echo $instance['excludeCommenters']; ?>"/>
+			<label for="<?php echo $this->get_field_id( 'excludeCommenters' ); ?>"><?php _e('Commenters to Exclude: (separated by comma)', 'simpleTopCommenters'); ?></label>
+			</br>
+			<input id="<?php echo $this->get_field_id( 'excludeCommenters' ); ?>" name="<?php echo $this->get_field_name( 'excludeCommenters' ); ?>" value="<?php echo $instance['excludeCommenters']; ?>" size="40"/>
 		</p>
 		
 		<!-- Limit -->
 		<p>
-			<label for="<?php echo $this->get_field_id( 'limit' ); ?>"><?php _e('# of Commenters to List: (leave blank to list all)', '5'); ?></label>
+			<label for="<?php echo $this->get_field_id( 'limit' ); ?>"><?php _e('# of Commenters to List: (leave blank to list all)', 'simpleTopCommenters'); ?></label>
+			</br>
 			<input id="<?php echo $this->get_field_id( 'limit' ); ?>" name="<?php echo $this->get_field_name( 'limit' ); ?>" value="<?php echo $instance['limit']; ?>" style="width:2em;" />
 		</p>
 		
 		<!-- Show "comments label" Checkbox -->
 		<p>
 			<input class="checkbox" type="checkbox" <?php checked(isset( $instance['show_comments_label']) ? $instance['show_comments_label'] : 0 ); ?> id="<?php echo $this->get_field_id( 'show_comments_label' ); ?>" name="<?php echo $this->get_field_name( 'show_comments_label' ); ?>" /> 
-			<label for="<?php echo $this->get_field_id( 'show_comments_label' ); ?>"><?php _e('Show "comments" Label?', 'example'); ?></label>
+			<label for="<?php echo $this->get_field_id( 'show_comments_label' ); ?>"><?php _e('Show "comments" Label?', 'simpleTopCommenters'); ?></label>
 		</p>
 
 	<?php

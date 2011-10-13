@@ -4,18 +4,20 @@ Donate link:
 Tags: comments, widget, sidebar, counter
 Requires at least: 3.0
 Tested up to: 3.0
-Stable tag: 1.0
+Stable tag: 1.1
 
 
 == Description ==
 
 A sidebar widget that displays a list of top commenters across a site, showing the number of comments for each. Inspired by and extended from the Top Commentators Widget by WebGrrrl.
 
+Version 1.1 supports localization (translation). Thanks to Mitja Miheliƒç - mitja.mihelic@arnes.si - http://www.linkedin.com/in/mmihelic for the code and translation to Slovene.
+
 Options:
-• Choose to define a unique commenter by "name" or "email" entered in the WordPress comment form
-• Exclude any specified commenters (the site administrator's comments, for example) from the top commenters list
-• Specify number of top commenters to show in the list
-• Choose to show or hide the "comments" label after the number. e.g. "username: 5 comments" OR "username: 5"
+‚Ä¢ Choose to define a unique commenter by "name" or "email" entered in the WordPress comment form
+‚Ä¢¬†Exclude any specified commenters (the site administrator's comments, for example) from the top commenters list
+‚Ä¢¬†Specify number of top commenters to show in the list
+‚Ä¢¬†Choose to show or hide the "comments" label after the number. e.g. "username: 5 comments" OR "username: 5"
 
 == Installation ==
 
@@ -24,6 +26,9 @@ Options:
 3. Go to the Appearance -> Widgets screen, drag the SimpleTopCommenters widget into the sidebar.
 
 == Frequently Asked Questions ==
+
+Q. How can I use this plugin with other translations?
+A. Create a PO file for the localization desired, name it with the appropriate country code and language code and add it to the "languages" folder. See http://urbangiraffe.com/articles/translating-wordpress-themes-and-plugins/ or http://codex.wordpress.org/I18n_for_WordPress_Developers#PO_files for more info. If you provide an additional translation, please send it to me, and I can add it to the next version. http://mike-eng.com
 
 = Options =
 
@@ -44,6 +49,9 @@ Options:
 == Changelog ==
 = 11/20/2010 =
 Initial Release 
+
+= 10/12/2011 =
+Added internationalization and included Slovene language files. Code and translation provided by Mitja Miheliƒç - mitja.mihelic@arnes.si - http://www.linkedin.com/in/mmihelic
 
 == Upgrade Notice ==
 Initial Release
