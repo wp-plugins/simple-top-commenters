@@ -14,7 +14,9 @@ A sidebar widget that displays a list of top commenters across a site, showing t
 
 Supported Languages:
 1. English
+
 2. Slovene: Thanks to Mitja Mihelič: mitja.mihelic@arnes.si http://www.linkedin.com/in/mmihelic
+
 3. Romanian: Thanks to Alexander Ovsov: <a href="http://webhostinggeeks.com/">Web Hosting Geeks</a>
 
 . Thanks to Mitja Mihelič - mitja.mihelic@arnes.si - http://www.linkedin.com/in/mmihelic for the code and translation to Slovene.
