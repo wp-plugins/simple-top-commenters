@@ -1,0 +1,72 @@
+# Copyright (C) YEAR WordPress contributors.
+# This file is distributed under the same license as the WordPress package.
+# Mitja Mihelič <mitja.mihelic@arnes.si>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Top Commenters 1.0\n"
+"Report-Msgid-Bugs-To: mitja.mihelic@arnes.si\n"
+"POT-Creation-Date: 2011-09-05 12:10-0600\n"
+"PO-Revision-Date: 2012-01-30 14:57+0200\n"
+"Language-Team: Web Geeks\n"
+"Last-Translator: \n"
+"MIME-Version: 1.0\n"
+"X-Poedit-Language: Romanian\n"
+"X-Poedit-Country: Romania\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+
+#: simple-top-commenters.php:5
+msgid "Displays a list of top commenters across a site, showing the number of comments for each."
+msgstr "Afişează o listă de comentatori de top pe un site, care arată numărul de comentarii pentru fiecare."
+
+#: simple-top-commenters.php:47
+msgid "A list of top commenters on your site"
+msgstr "O listă de comentatori de top pe site-ul dvs."
+
+#: simple-top-commenters.php:53
+msgid "SimpleTopCommenters"
+msgstr "SimpleTopCommenters"
+
+#: simple-top-commenters.php:138
+#: simple-top-commenters.php:141
+msgid "comment"
+msgid_plural "comments"
+msgstr[0] "comentariu"
+msgstr[1] "komentarja"
+msgstr[2] "komentarji"
+msgstr[3] "komentarjev"
+
+#: simple-top-commenters.php:190
+msgid "Top Commenters"
+msgstr "Top comentatori"
+
+#: simple-top-commenters.php:195
+msgid "Title:"
+msgstr "Titlu:"
+
+#: simple-top-commenters.php:201
+msgid "Define Commenters by:"
+msgstr "Definirea de comentatori:"
+
+#: simple-top-commenters.php:203
+msgid "email"
+msgstr "e-mail"
+
+#: simple-top-commenters.php:204
+msgid "name"
+msgstr "nume"
+
+#: simple-top-commenters.php:210
+msgid "Commenters to Exclude: (separated by comma)"
+msgstr "Comentatori de a exclude: (separate prin virgula)"
+
+#: simple-top-commenters.php:216
+msgid "# of Commenters to List: (leave blank to list all)"
+msgstr "# De comentatori la Lista de: (lăsaţi necompletat pentru a lista toate)"
+
+#: simple-top-commenters.php:223
+msgid "Show \"comments\" Label?"
+msgstr "Arată \"comentarii\"Casa de discuri?"
+
