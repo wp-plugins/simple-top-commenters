@@ -55,5 +55,8 @@ Initial Release
 = 10/12/2011 =
 Added internationalization and included Slovene language files. Code and translation provided by Mitja Mihelič - mitja.mihelic@arnes.si - http://www.linkedin.com/in/mmihelic
 
+= 5/6/2012 = 
+Added Romanian localization. Thanks to Alexander Ovsov: <a href="http://webhostinggeeks.com/">Web Hosting Geeks</a>
+
 == Upgrade Notice ==
 Version 1.1 supports localization
