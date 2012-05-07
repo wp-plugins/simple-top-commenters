@@ -4,7 +4,7 @@ Donate link:
 Tags: comments, widget, sidebar, counter
 Requires at least: 3.0
 Tested up to: 3.0
-Stable tag: 1.1
+Stable tag: 1.2
 
 A sidebar widget that displays a list of top commenters across a site, showing the number of comments for each.
 
