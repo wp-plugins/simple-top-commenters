@@ -5,7 +5,7 @@ Plugin URI:
 Description: Displays a list of top commenters across a site, showing the number of comments for each.
 Text Domain: simpleTopCommenters
 Domain Path: /languages
-Version: 1.1
+Version: 1.2
 Author: Mike Eng
 Author URI: http://mike-eng.com
 License: GPL2
