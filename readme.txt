@@ -3,8 +3,8 @@ Contributors: Mike Eng http://mike-eng.com
 Donate link: 
 Tags: comments, widget, sidebar, counter
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 1.2
+Tested up to: 3.9
+Stable tag: 1.3
 
 A sidebar widget that displays a list of top commenters across a site, showing the number of comments for each.
 
@@ -59,6 +59,9 @@ Added internationalization and included Slovene language files. Code and transla
 
 = 5/6/2012 = 
 Added Romanian localization. Thanks to Alexander Ovsov: <a href="http://webhostinggeeks.com/">Web Hosting Geeks</a>
+
+= 6/1/2014 = 
+Added Ukranian localization. Thanks to Michael Yunat: <a href="http://getvoip.com/blog">http://getvoip.com</a>
 
 == Upgrade Notice ==
 Version 1.1 supports localization
