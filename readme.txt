@@ -12,7 +12,7 @@ A sidebar widget that displays a list of top commenters across a site, showing t
 
 A sidebar widget that displays a list of top commenters across a site, showing the number of comments for each. Inspired by and extended from the Top Commentators Widget by WebGrrrl.
 
-<h3>Supported Languages:</h3>
+<h3 name="supported_languages">Supported Languages:</h3>
 1. English
 
 2. Slovene: Thanks to Mitja Mihelič: mitja.mihelic@arnes.si http://www.linkedin.com/in/mmihelic
