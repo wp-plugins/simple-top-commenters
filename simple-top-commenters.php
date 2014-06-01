@@ -182,7 +182,7 @@ class SimpleTopCommenters extends WP_Widget {
 	function form( $instance ) {
 
 		/* Set up some default widget settings. */
-		$defaults = array( 'title' => __('Top Commenters', 'simpleTopCommenters'), 'excludeCommenters' => __('janez, janez@guest.arnes.si', 'simpleTopCommenters'), 'identifier' => 'email', 'limit' => 5, 'show_comments_label' => true );
+		$defaults = array( 'title' => __('Top Commenters', 'simpleTopCommenters'), 'excludeCommenters' => __('Bert, Ernie@sesamestreet.com', 'simpleTopCommenters'), 'identifier' => 'email', 'limit' => 5, 'show_comments_label' => true );
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
 
 		<!-- Widget Title: Text Input -->
